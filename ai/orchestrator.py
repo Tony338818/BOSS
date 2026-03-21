@@ -2,6 +2,14 @@ from ai.intent_model import create_session, recognize_intent
 from ai.validator import validator
 
 
+
+FIELD_QUESTIONS = {
+    "name": "What product are you referring to?",
+    "quantity": "How many units?",
+    "selling_price": "What is the selling price?",
+    "cost_price": "What is the cost price?",
+}
+
 def process_message(message: str, session: dict) -> dict:
     """
     Full pipeline:
@@ -55,6 +63,7 @@ def process_message(message: str, session: dict) -> dict:
             session["data"]   = merged_data
 
             return {
+                "action": "call_api",
                 "status": "ready",
                 "class":  msg_class,
                 "intent": intent,
@@ -122,12 +131,12 @@ if __name__ == "__main__":
         # 🧠 Handle system responses
         if result.get("action") == "call_api":
             print("\n✅ FINAL OUTPUT (Ready for API)")
-            print(f"Intent: {result['payload']['intent']}")
-            print(f"Class: {result['payload']['class']}")
-            print(f"Data: {result['payload']['data']}")
+            print(f"Intent: {result['intent']}")
+            print(f"Class: {result['class']}")
+            print(f"Data: {result['data']}")
 
             # Reset session after completion
-            session = create_session()
+            # session = create_session()
 
         elif result.get("reply"):
             print(f"\nAI: {result['reply']}")

@@ -183,7 +183,8 @@ def recognize_intent(message: str, session: dict) -> dict:
             contents=prompt,
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
-                temperature=0.2
+                temperature=0.2,
+                system_instruction="You are an AI assistant for a retail management system."
             )
         )
 
