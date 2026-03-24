@@ -1,0 +1,21 @@
+{
+  "whatsapp:+447823701202": {
+    "intent": "add_product",
+    "class": "Inventory",
+    "data": {
+      "name": "garri",
+      "quantity": 2,
+      "cost_price": 3.0,
+      "selling_price": 4.3
+    }
+  },
+  "whatsapp:+2349133881829": {
+    "intent": "add_product",
+    "class": "Inventory",
+    "data": {
+      "name": "bags of rice",
+      "cost_price": 5.0,
+      "selling_price": 5.4
+    }
+  }
+}
