@@ -1,21 +1,32 @@
 {
-  "whatsapp:+447823701202": {
-    "intent": "add_product",
-    "class": "Inventory",
-    "data": {
-      "name": "garri",
-      "quantity": 2,
-      "cost_price": 3.0,
-      "selling_price": 4.3
-    }
-  },
   "whatsapp:+2349133881829": {
-    "intent": "add_product",
-    "class": "Inventory",
-    "data": {
-      "name": "bags of rice",
-      "cost_price": 5.0,
-      "selling_price": 5.4
-    }
+    "mode": "chat",
+    "last_intent": "casual_conversation",
+    "history": [
+      {
+        "type": "chat",
+        "message": "Hi I'm Tony"
+      },
+      {
+        "type": "chat",
+        "message": "I'm a software engineer and business man"
+      },
+      {
+        "type": "chat",
+        "message": "Hi"
+      },
+      {
+        "type": "chat",
+        "message": "Hey are you good"
+      },
+      {
+        "type": "chat",
+        "message": "I just got a bag of rice"
+      }
+    ],
+    "task": null,
+    "last_completed_task": null,
+    "last_message": "I just got a bag of rice",
+    "restask": null
   }
 }
