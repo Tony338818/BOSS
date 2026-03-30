@@ -1,122 +1,38 @@
 {
   "whatsapp:+2349133881829": {
     "mode": "chat",
-    "last_intent": "casual_conversation",
+    "last_intent": "inventory_conversation",
     "history": [
       {
+        "type": "casual_conversation",
+        "message": "HI how are you",
+        "bot_response": "I'm doing well, thank you! Would you like to check our inventory or add a new product?"
+      },
+      {
         "type": "inventory_conversation",
-        "message": "add 10 bags of rice at 5$ each and selling for 5.4$",
+        "message": "add 10 bags of rice we buy at 6$ and sell at 7",
         "bot_response": {
           "intent": "add_product",
           "data": {
             "name": "rice",
             "quantity": 10,
-            "cost_price": 5,
-            "selling_price": 5.4
+            "cost_price": 6,
+            "selling_price": 7
           }
         }
-      },
-      {
-        "type": "inventory_conversation",
-        "message": "also add 15 crates of eggs",
-        "bot_response": {
-          "intent": "add_product",
-          "data": {
-            "name": "eggs",
-            "quantity": 15
-          }
-        }
-      },
-      {
-        "type": "inventory_conversation",
-        "message": "well i buy at 1.33 and sell at 2",
-        "bot_response": {
-          "intent": "add_product",
-          "data": {
-            "cost_price": 1.33,
-            "selling_price": 2.0
-          }
-        }
-      },
-      {
-        "type": "inventory_conversation",
-        "message": "how many eggs do we have in the store",
-        "bot_response": {
-          "intent": "get_product_info",
-          "data": {
-            "name": "eggs"
-          }
-        }
-      },
-      {
-        "type": "casual_conversation",
-        "message": "how are you today",
-        "bot_response": "I'm doing well, thank you. Would you like to check our current inventory or add a new product?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "hi",
-        "bot_response": "Hi! How can I help you today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "good afternoon, please introduce yourself",
-        "bot_response": "Hi! How can I help you today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "good afternoon, please introduce yourself",
-        "bot_response": "Hi! How can I help you today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "good afternoon, please introduce yourself",
-        "bot_response": "Hi! How can I help you today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "good afternoon, please introduce yourself",
-        "bot_response": "Hi! How can I help you today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "good afternoon, please introduce yourself",
-        "bot_response": "Hi! How can I help you today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "good afternoon, please introduce yourself",
-        "bot_response": "Hi! How can I help you today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "good afternoon, please introduce yourself",
-        "bot_response": "Hi! How can I help you today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "good afternoon, please introduce yourself",
-        "bot_response": "Hi! How can I help you today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "good afternoon, please introduce yourself",
-        "bot_response": "Hi! How can I help you today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "good afternoon, please introduce yourself",
-        "bot_response": "Hi! How can I help you today?"
       }
     ],
     "task": null,
     "last_completed_task": {
-      "intent": "get_product_info",
+      "intent": "add_product",
       "collected_data": {
-        "name": "eggs"
+        "name": "rice",
+        "quantity": 10,
+        "cost_price": 6,
+        "selling_price": 7
       },
       "status": "in_progress"
     },
-    "last_message": "good afternoon, please introduce yourself"
+    "last_message": "add 10 bags of rice we buy at 6$ and sell at 7"
   }
 }
