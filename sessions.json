@@ -5,106 +5,26 @@
     "history": [
       {
         "type": "casual_conversation",
-        "message": "hi how are you",
-        "bot_response": "Hi! How can I help you today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "hi how are you",
-        "bot_response": "I'm doing well, thank you! Would you like to check our current inventory or add a new product?"
-      },
-      {
-        "type": "inventory_conversation",
-        "message": "good, i want to know how many bags of long grain rice we have in the store",
-        "bot_response": {
-          "intent": "get_product_info",
-          "data": {
-            "name": "long grain rice"
-          }
-        }
-      },
-      {
-        "type": "inventory_conversation",
-        "message": "add 12 bags of beans to the store",
-        "bot_response": {
-          "intent": "add_product",
-          "data": {
-            "name": "beans",
-            "quantity": 12
-          }
-        }
-      },
-      {
-        "type": "sales_conversation",
-        "message": "we buy at 4$ and sell at 5",
-        "bot_response": {
-          "intent": null,
-          "data": {}
-        }
-      },
-      {
-        "type": "casual_conversation",
-        "message": "Hi how are you",
-        "bot_response": "Hi! How can I help you today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "Hi how are you",
-        "bot_response": "Hi! How can I help you today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "Hi how are you",
-        "bot_response": "I'm doing well, thank you! Would you like to check inventory or add new stock?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "hi how are you",
-        "bot_response": "I'm doing well, thank you! Would you like to add stock or check your inventory today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "hi",
-        "bot_response": "Hello! Would you like to check your inventory or add a new product today?"
+        "message": "Hi I'm tony",
+        "bot_response": "Hello Tony! Would you like to check our current inventory or add a new product?"
       }
     ],
     "task": null,
-    "last_completed_task": {
-      "intent": "get_product_info",
-      "collected_data": {
-        "name": "long grain rice"
-      },
-      "status": "in_progress"
-    },
-    "last_message": "hi"
+    "last_completed_task": null,
+    "last_message": "Hi I'm tony"
   },
-  "whatsapp:+447823701202": {
+  "+2349133881829": {
     "mode": "chat",
     "last_intent": "casual_conversation",
     "history": [
       {
         "type": "casual_conversation",
-        "message": "Hi how are you",
-        "bot_response": "I'm doing well, thank you! Would you like to check our current inventory or add a new product?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "Hello how goes it",
-        "bot_response": "I'm doing well, thank you! Would you like to manage your stock or check inventory?"
-      },
-      {
-        "type": "casual_conversation",
         "message": "Hi",
-        "bot_response": "Hello! Would you like to check your inventory or add a new product today?"
-      },
-      {
-        "type": "casual_conversation",
-        "message": "Yo",
-        "bot_response": "Hello! Would you like to manage your inventory or check your sales today?"
+        "bot_response": "Hello! Would you like to manage your inventory or add new stock today?"
       }
     ],
     "task": null,
     "last_completed_task": null,
-    "last_message": "Yo"
+    "last_message": "Hi"
   }
 }
